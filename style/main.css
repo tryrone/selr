@@ -1,0 +1,824 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "hiragino kaku gothic pro w6";
+  font-family: "Hiragino Kaku Gothic Std W8";
+  src: url("./hiragino-kaku-gothic-std-w8.otf") format("opentype");
+  src: url("./hiragino-kaku-gothic-pro-w6.otf") format("opentype");
+  font-style: normal;
+}
+
+.top-bar {
+  margin: 0;
+  padding: 0;
+}
+
+nav.first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav.first .nav-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: -147px;
+  width: 37%;
+  list-style: none;
+}
+
+nav.first .nav-1 .list {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "hiragino kaku gothic pro w6";
+}
+
+nav.first .nav-1 .list a {
+  color: white;
+}
+
+.list:hover {
+  text-decoration: none;
+}
+
+.bg-text {
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  margin-top: 155px;
+  font-size: 35px;
+  color: black;
+  font-family: "Hiragino Kaku Gothic Std W8";
+}
+
+.bg-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px auto;
+}
+
+.bg-cont .bg-text-2, .bg-cont .bg-text-3 {
+  font-family: "Hiragino Kaku Gothic Std W8";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.bg-cont .bg-text-2 {
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.text-4 {
+  font-family: "Hiragino Kaku Gothic Std W8";
+  text-align: center;
+  font-style: normal;
+  margin-top: 24px;
+  font-weight: bolder;
+  font-size: 27px;
+}
+
+.buttons-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 33px;
+  width: 344px;
+}
+
+.buttons-cont .btn-cont-1, .buttons-cont .btn-cont-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 12px 24px;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.buttons-cont .btn-cont-1 .apple, .buttons-cont .btn-cont-1 .android, .buttons-cont .btn-cont-2 .apple, .buttons-cont .btn-cont-2 .android {
+  margin-right: 12px;
+  height: 19px;
+  width: 15.2px;
+}
+
+.buttons-cont .btn-cont-2 {
+  background-color: black;
+}
+
+.buttons-cont .btn-cont-2 p {
+  color: white;
+}
+
+.message {
+  font-family: "Hiragino Kaku Gothic Std W8";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  width: 882px;
+  margin: 0px auto;
+  margin-top: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+.image-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-text .img-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.image-text .img-stack .amk {
+  position: relative;
+  left: -70px;
+  top: 96px;
+}
+
+.image-text .phone {
+  height: 456px;
+  width: 277px;
+}
+
+.row-ing {
+  margin-top: 153px;
+  margin-bottom: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row-ing .img-rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.row-ing .img-rows img {
+  height: 320px;
+  width: 320px;
+}
+
+.meetje {
+  margin-top: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 64px;
+  color: black;
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.meetje:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.how {
+  font-family: "Hiragino Kaku Gothic Std W8";
+  font-style: normal;
+  margin-top: 100px;
+  margin-bottom: 81px;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.works-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0px 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 214px;
+}
+
+.works-cont .work-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0px;
+}
+
+.works-cont .work-one .one-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works-cont .work-one .one-upper .pro {
+  margin-right: 16px;
+  height: 62px;
+  width: 62px;
+}
+
+.works-cont .work-one .one-upper .search-buy {
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  width: 238px;
+  color: #000000;
+}
+
+.works-cont .work-one .one-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.works-cont .work-one .one-lower .within {
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 16px;
+  width: 297px;
+  color: #000000;
+}
+
+.works-cont .work-one .one-lower .pickup {
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  width: 297px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.works-cont .work-one .one-lower .handbook {
+  padding: 12px 54px;
+  position: relative;
+  top: 13px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+}
+
+.works-cont .work-three .sos {
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+}
+
+.works-cont .work-three .buying {
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  font-size: 31px;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.works-cont .work-three .right-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 352px;
+  margin-top: 96px;
+}
+
+.works-cont .work-three .right-two .two-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.works-cont .work-three .right-two .two-inner .photos {
+  font-family: "hiragino kaku gothic pro w6";
+  position: relative;
+  top: 47px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+}
+
+.works-cont .work-three .right-two .tags {
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+}
+
+.works-cont .work-three .right-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 206px;
+  width: 352px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works-cont .work-three .right-bot .add {
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  margin-left: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+}
+
+.footer {
+  height: 380px;
+  background-color: black;
+  padding: 72px 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .lod {
+  margin: 0px auto;
+}
+
+.footer .market {
+  font-family: "hiragino kaku gothic pro w6";
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer .twi {
+  margin-top: 42px;
+}
+
+.footer .bot-links {
+  margin-top: 42px;
+}
+
+.footer .bot-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .bot-links ul li a {
+  color: white;
+  font-family: "hiragino kaku gothic pro w6";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (min-width: 1000px) {
+  .sm-screen {
+    display: none;
+    -webkit-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+  }
+}
+
+@media (max-width: 1000px) {
+  .lg-screen {
+    display: none;
+  }
+  .small-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-sm-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+  }
+  .main-sm-nav .sm-logo {
+    height: 38px;
+    width: 62px;
+  }
+  .main-sm-nav .sm-ham {
+    height: 21px;
+    width: 29px;
+  }
+  .sm-make {
+    font-family: "Hiragino Kaku Gothic Std W8";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 37px;
+    text-align: center;
+    color: #000000;
+    margin: 0px auto;
+    margin-top: 114px;
+    width: 80%;
+    -webkit-text-fill-color: black;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+  }
+  .sm-phone {
+    margin-top: 163px;
+  }
+  .message {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "hiragino kaku gothic pro w6";
+  }
+  .sm-text {
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 50px;
+  }
+  .sm-pics {
+    height: 277px;
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 70px;
+  }
+  .sm-pics .sm-img3 {
+    position: relative;
+    margin-left: -55px;
+    z-index: 4;
+  }
+  .sm-pics .sm-img2 {
+    position: relative;
+    margin-left: 10px;
+    margin-top: -100px;
+    z-index: 3;
+  }
+  .sm-pics .sm-img1 {
+    position: relative;
+    margin-left: 60px;
+    margin-top: -80px;
+    z-index: 2;
+  }
+  .meetje {
+    margin-top: 500px;
+    margin-bottom: 52px;
+    border: 2px solid black;
+    padding: 11px 37px;
+  }
+  .how {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    margin-top: 0px;
+  }
+  .sos {
+    font-family: "hiragino kaku gothic pro w6";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 53px;
+    color: #000000;
+  }
+  .buying {
+    font-family: "hiragino kaku gothic pro w6";
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    font-size: 31px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .one-upper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    margin: 20px auto;
+    padding: 0px 45px;
+    align-items: center;
+  }
+  .one-upper .pro {
+    margin-right: 16px;
+    height: 62px;
+    width: 62px;
+  }
+  .one-upper .search-buy {
+    font-family: "hiragino kaku gothic pro w6";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    width: 70%;
+    color: #000000;
+  }
+  .right-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 352px;
+    margin-top: 96px;
+    margin: 0px auto;
+    margin-bottom: 40.96px;
+  }
+  .right-two .two-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .right-two .two-inner .photos {
+    font-family: "hiragino kaku gothic pro w6";
+    position: relative;
+    top: 47px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+  }
+  .right-two .tags {
+    font-family: "hiragino kaku gothic pro w6";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    color: #000000;
+  }
+  .one-lower {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px 0px;
+    background: #EFF5FF;
+  }
+  .one-lower .within {
+    font-family: "hiragino kaku gothic pro w6";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #000000;
+  }
+  .one-lower .pickup {
+    font-family: "hiragino kaku gothic pro w6";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    width: 70%;
+    color: #000000;
+    margin: 0px auto;
+    margin-bottom: 13px;
+  }
+  .one-lower .handbook {
+    padding: 12px 54px;
+    position: relative;
+    top: 13px;
+    background: #FFFFFF;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: "hiragino kaku gothic pro w6";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+  .sm-footer {
+    padding: 49px 59px;
+  }
+  .sm-footer .fot-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sm-footer .fot-inner .sos-lin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sm-footer .fot-inner .sos-lin .at {
+    margin-right: 20px;
+  }
+  .sm-footer .fot-inner .sm-lod {
+    height: 54px;
+    width: 88px;
+  }
+  .sm-footer .fot-inner .sm-twi {
+    height: 16px;
+    width: 56px;
+  }
+  .sm-footer .foot-sos-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 20px;
+  }
+  .sm-footer .foot-sos-cont .foot-01, .sm-footer .foot-sos-cont .foot-02 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sm-footer .foot-sos-cont .foot-01 a, .sm-footer .foot-sos-cont .foot-02 a {
+    color: black;
+    padding: 17px 0px;
+    font-family: "hiragino kaku gothic pro w6";
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
